@@ -314,28 +314,7 @@
    8. NAV CV BUTTON — CV download link
    Replace '#' with your actual CV URL
 ───────────────────────────────────────── */
-(function initCvButton() {
-  const btns = [
-    document.getElementById('navCta'),
-    document.getElementById('cvDownload')
-  ];
-  // TODO: Replace this URL with your Google Drive / direct PDF link
-  const CV_URL = 'YOUR_CV_PDF_URL_HERE';
 
-  btns.forEach(btn => {
-    if (!btn) return;
-    btn.addEventListener('click', e => {
-      e.preventDefault();
-      if (CV_URL !== 'YOUR_CV_PDF_URL_HERE') {
-        window.open(CV_URL, '_blank', 'noopener');
-      } else {
-        // Fallback: show instruction
-        console.info('[Portfolio] Replace CV_URL in script.js with your PDF link.');
-        alert('CV link not yet configured. Add your Google Drive PDF URL in script.js');
-      }
-    });
-  });
-})();
 
 
 /* ─────────────────────────────────────────
