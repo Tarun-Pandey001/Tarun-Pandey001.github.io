@@ -314,7 +314,9 @@
    8. NAV CV BUTTON — CV download link
    Replace '#' with your actual CV URL
 ───────────────────────────────────────── */
-
+(function initCvButton() {
+  
+})();
 
 
 /* ─────────────────────────────────────────
