@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Tarun Pandey — Mechatronics & Mechanical Design Engineer. M.Sc. student at Universität Siegen. Seeking Werkstudent and internship roles in Germany."/>
+  <meta name="keywords" content="Mechatronics, Mechanical Engineering, SolidWorks, ANSYS, AutoCAD, Python, Werkstudent, Siegen, Germany"/>
+  <title>Tarun Pandey — Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ─── CURSOR ─── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ─── NAV ─── -->
+  <header class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-bracket">[</span>TP<span class="nav__logo-bracket">]</span>
+    </div>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about"      class="nav__link" data-section="about">About</a>
+      <a href="#stack"      class="nav__link" data-section="stack">Stack</a>
+      <a href="#projects"   class="nav__link" data-section="projects">Projects</a>
+      <a href="#experience" class="nav__link" data-section="experience">Experience</a>
+      <a href="#contact"    class="nav__link" data-section="contact">Contact</a>
+    </nav>
+    <a href="#" class="nav__cta" id="navCta">↓ CV</a>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal-up" style="--delay:0s">
+        <span class="hero__dot"></span>
+        <span class="mono">Siegen, Germany · Available Now</span>
+      </div>
+      <h1 class="hero__name">
+        <span class="hero__name-line reveal-up" style="--delay:0.1s">TARUN</span>
+        <span class="hero__name-line reveal-up" style="--delay:0.2s">PANDEY</span>
+      </h1>
+      <p class="hero__title reveal-up" style="--delay:0.35s">
+        Mechatronics &amp; Mechanical Design Engineer
+      </p>
+      <p class="hero__sub reveal-up" style="--delay:0.45s">
+        M.Sc. Candidate · Universität Siegen · Seeking Werkstudent &amp; Internship Roles
+      </p>
+      <div class="hero__actions reveal-up" style="--delay:0.6s">
+        <a href="#" class="btn btn--primary" id="cvDownload">
+          <span class="btn__icon">↓</span> Download CV
+        </a>
+        <a href="#projects" class="btn btn--outline smooth-scroll">
+          View Projects <span class="btn__icon">→</span>
+        </a>
+      </div>
+      <div class="hero__tags reveal-up" style="--delay:0.75s">
+        <span class="tag">SolidWorks</span>
+        <span class="tag">ANSYS Fluent</span>
+        <span class="tag">AutoCAD</span>
+        <span class="tag">Python</span>
+        <span class="tag">Mechatronics</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span class="mono">scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header scroll-reveal">
+        <span class="section__num mono">01</span>
+        <h2 class="section__title">About Me</h2>
+        <div class="section__line"></div>
+      </div>
+      <div class="about__grid">
+        <div class="about__visual scroll-reveal">
+          <div class="about__photo-frame">
+            <div class="about__photo-placeholder">
+              <span class="mono">PHOTO</span>
+              <p>Replace with<br/>your headshot</p>
+            </div>
+            <div class="about__frame-corner about__frame-corner--tl"></div>
+            <div class="about__frame-corner about__frame-corner--tr"></div>
+            <div class="about__frame-corner about__frame-corner--bl"></div>
+            <div class="about__frame-corner about__frame-corner--br"></div>
+          </div>
+          <div class="about__stat-cards">
+            <div class="stat-card scroll-reveal" style="--delay:0.1s">
+              <span class="stat-card__num">2+</span>
+              <span class="stat-card__label">Years Industry<br/>Experience</span>
+            </div>
+            <div class="stat-card scroll-reveal" style="--delay:0.2s">
+              <span class="stat-card__num">3</span>
+              <span class="stat-card__label">Engineering<br/>Projects</span>
+            </div>
+            <div class="stat-card scroll-reveal" style="--delay:0.3s">
+              <span class="stat-card__num">5+</span>
+              <span class="stat-card__label">Technical<br/>Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="about__intro scroll-reveal">
+            I design, simulate, and engineer — bridging the gap between mechanical precision and intelligent systems.
+          </p>
+          <p class="about__body scroll-reveal">
+            My engineering journey spans from the production floors of <strong>Bharat Heavy Electricals Limited</strong> to the research labs of Universität Siegen. Currently pursuing my M.Sc. in Mechatronics, I bring both academic rigour and real-world problem-solving to every challenge.
+          </p>
+          <p class="about__body scroll-reveal">
+            Since relocating to Siegen, I've fully embraced the German engineering ethos — structured workflows, precise documentation, and a relentless focus on quality (<em>Qualität</em>). I take full ownership of every project, from concept to delivery.
+          </p>
+          <div class="about__facts scroll-reveal">
+            <div class="fact">
+              <span class="fact__icon">🎓</span>
+              <div>
+                <strong>M.Sc. Mechatronics</strong>
+                <span>Universität Siegen · 2025–ongoing</span>
+              </div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">🔧</span>
+              <div>
+                <strong>B.Tech Mechanical Engineering</strong>
+                <span>Amity University · 2021–2025</span>
+              </div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">📍</span>
+              <div>
+                <strong>Siegen, NRW, Germany</strong>
+                <span>Open to Remote / Hybrid / On-site</span>
+              </div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">🌐</span>
+              <div>
+                <strong>Languages</strong>
+                <span>English C2 · German A2 · Hindi Native</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TECH STACK ─── -->
+  <section class="section stack" id="stack">
+    <div class="container">
+      <div class="section__header scroll-reveal">
+        <span class="section__num mono">02</span>
+        <h2 class="section__title">Technical Stack</h2>
+        <div class="section__line"></div>
+      </div>
+      <p class="stack__sub scroll-reveal">Tools I use professionally and academically — no filler, no guesswork.</p>
+      <div class="stack__grid">
+
+        <div class="stack-card scroll-reveal" style="--delay:0s">
+          <div class="stack-card__header">
+            <span class="stack-card__icon">⬡</span>
+            <h3>CAD &amp; Simulation</h3>
+          </div>
+          <ul class="stack-card__list">
+            <li><span class="skill-dot"></span>AutoCAD 2D / 3D</li>
+            <li><span class="skill-dot"></span>SolidWorks — Parts, Assemblies, Drawings</li>
+            <li><span class="skill-dot"></span>ANSYS Mechanical — FEA</li>
+            <li><span class="skill-dot"></span>ANSYS Fluent — CFD</li>
+          </ul>
+          <div class="stack-card__skill-bar">
+            <div class="skill-bar" data-width="92">
+              <div class="skill-bar__fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-card scroll-reveal" style="--delay:0.1s">
+          <div class="stack-card__header">
+            <span class="stack-card__icon">⟨/⟩</span>
+            <h3>Programming &amp; Data</h3>
+          </div>
+          <ul class="stack-card__list">
+            <li><span class="skill-dot"></span>Python — NumPy, Pandas, Matplotlib</li>
+            <li><span class="skill-dot"></span>MATLAB — Simulation &amp; Analysis</li>
+            <li><span class="skill-dot"></span>C++ — Fundamentals</li>
+            <li><span class="skill-dot"></span>MS Excel — Advanced</li>
+          </ul>
+          <div class="stack-card__skill-bar">
+            <div class="skill-bar" data-width="78">
+              <div class="skill-bar__fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-card scroll-reveal" style="--delay:0.2s">
+          <div class="stack-card__header">
+            <span class="stack-card__icon">◈</span>
+            <h3>Engineering Domains</h3>
+          </div>
+          <ul class="stack-card__list">
+            <li><span class="skill-dot"></span>Thermodynamics &amp; Heat Transfer</li>
+            <li><span class="skill-dot"></span>Internal Combustion Engines</li>
+            <li><span class="skill-dot"></span>Product Design &amp; DFM</li>
+            <li><span class="skill-dot"></span>Quality Control · Manufacturing</li>
+          </ul>
+          <div class="stack-card__skill-bar">
+            <div class="skill-bar" data-width="85">
+              <div class="skill-bar__fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-card scroll-reveal" style="--delay:0.3s">
+          <div class="stack-card__header">
+            <span class="stack-card__icon">⚙</span>
+            <h3>Management &amp; Tools</h3>
+          </div>
+          <ul class="stack-card__list">
+            <li><span class="skill-dot"></span>Project Management</li>
+            <li><span class="skill-dot"></span>Technical Documentation</li>
+            <li><span class="skill-dot"></span>MS Office Suite</li>
+            <li><span class="skill-dot"></span>Cross-functional Teamwork</li>
+          </ul>
+          <div class="stack-card__skill-bar">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-bar__fill"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications strip -->
+      <div class="certs scroll-reveal">
+        <span class="mono certs__label">Certifications ·</span>
+        <div class="certs__list">
+          <span class="cert-badge">NPTEL · Manufacturing Automation</span>
+          <span class="cert-badge">NPTEL · Economics of Innovation</span>
+          <span class="cert-badge">NPTEL · Stress Management</span>
+          <span class="cert-badge">MathWorks · MATLAB Onramp</span>
+          <span class="cert-badge">Analytics for Business Intelligence</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header scroll-reveal">
+        <span class="section__num mono">03</span>
+        <h2 class="section__title">Projects</h2>
+        <div class="section__line"></div>
+      </div>
+      <p class="stack__sub scroll-reveal">Engineering problems I've designed, simulated, and solved.</p>
+
+      <div class="projects__grid">
+
+        <!-- Project 1 — Featured -->
+        <article class="project-card project-card--featured scroll-reveal" style="--delay:0s">
+          <div class="project-card__media">
+            <div class="project-card__img-placeholder">
+              <span class="project-card__img-label mono">BUILDING ENVELOPE RESEARCH</span>
+              <div class="project-card__blueprint-lines">
+                <div></div><div></div><div></div><div></div>
+              </div>
+            </div>
+            <div class="project-card__badge">Featured</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag tag--sm">SolidWorks</span>
+              <span class="tag tag--sm">ANSYS</span>
+              <span class="tag tag--sm">Sustainability</span>
+              <span class="tag tag--sm">B.Tech Thesis</span>
+            </div>
+            <h3 class="project-card__title">Lightweight Eco-Friendly Building Envelope</h3>
+            <p class="project-card__desc">
+              Developed novel building materials optimised for thermal efficiency and structural lightness. Applied FEA simulation to validate energy-saving performance against standard construction benchmarks, contributing toward sustainable development goals.
+            </p>
+            <div class="project-card__meta mono">Dec 2024 – Jun 2025</div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card scroll-reveal" style="--delay:0.15s">
+          <div class="project-card__media">
+            <div class="project-card__img-placeholder project-card__img-placeholder--alt">
+              <span class="project-card__img-label mono">POWER SYSTEMS · BHEL</span>
+              <div class="project-card__blueprint-lines">
+                <div></div><div></div><div></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag tag--sm">Power Engineering</span>
+              <span class="tag tag--sm">System Design</span>
+              <span class="tag tag--sm">Industry</span>
+            </div>
+            <h3 class="project-card__title">Power System Design &amp; Analysis — BHEL</h3>
+            <p class="project-card__desc">
+              Contributed to system design and technical analysis within BHEL's power and energy division. Supported live project documentation and cross-functional technical reporting at one of India's largest engineering enterprises.
+            </p>
+            <div class="project-card__meta mono">May – Jul 2024</div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card project-card--wip scroll-reveal" style="--delay:0.3s">
+          <div class="project-card__media">
+            <div class="project-card__img-placeholder project-card__img-placeholder--dark">
+              <span class="project-card__img-label mono">MECHATRONICS · UNI SIEGEN</span>
+              <div class="project-card__blueprint-lines">
+                <div></div><div></div>
+              </div>
+            </div>
+            <div class="project-card__badge project-card__badge--wip">In Progress</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag tag--sm">Mechatronics</span>
+              <span class="tag tag--sm">Control Systems</span>
+              <span class="tag tag--sm">Python</span>
+            </div>
+            <h3 class="project-card__title">Mechatronics Systems — Universität Siegen</h3>
+            <p class="project-card__desc">
+              Ongoing academic projects integrating mechanical design, control systems, and embedded programming within the M.Sc. programme. Portfolio updated continuously as modules progress.
+            </p>
+            <div class="project-card__meta mono">2025 — ongoing</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__header scroll-reveal">
+        <span class="section__num mono">04</span>
+        <h2 class="section__title">Experience &amp; Education</h2>
+        <div class="section__line"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline__item timeline__item--active scroll-reveal" style="--delay:0s">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+            <div class="timeline__line"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__role">M.Sc. Mechatronics Engineering</h3>
+                <p class="timeline__org">Universität Siegen · Siegen, Germany</p>
+              </div>
+              <span class="timeline__date mono">Oct 2025 – Present</span>
+            </div>
+            <p class="timeline__desc">Integrating mechanical engineering, electrical systems, and intelligent control — building toward cross-disciplinary product development roles in German industry.</p>
+            <div class="timeline__tags">
+              <span class="tag tag--sm">Control Systems</span>
+              <span class="tag tag--sm">Embedded Systems</span>
+              <span class="tag tag--sm">Robotics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item scroll-reveal" style="--delay:0.1s">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+            <div class="timeline__line"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__role">Vocational Trainee</h3>
+                <p class="timeline__org">Bharat Heavy Electricals Limited (BHEL) · Bhopal, India</p>
+              </div>
+              <span class="timeline__date mono">May – Jul 2024</span>
+            </div>
+            <p class="timeline__desc">Contributed to system design, technical analysis, and project support within one of India's leading power engineering enterprises. Gained hands-on exposure to large-scale industrial workflows.</p>
+            <div class="timeline__tags">
+              <span class="tag tag--sm">Power Systems</span>
+              <span class="tag tag--sm">Technical Analysis</span>
+              <span class="tag tag--sm">Documentation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item scroll-reveal" style="--delay:0.2s">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+            <div class="timeline__line"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__role">B.Tech Mechanical Engineering</h3>
+                <p class="timeline__org">Amity University · Noida, India</p>
+              </div>
+              <span class="timeline__date mono">Sep 2021 – Jun 2025</span>
+            </div>
+            <p class="timeline__desc">Core studies in thermodynamics, machine design, manufacturing, and CAD. Final year thesis focused on sustainable building materials using ANSYS simulation.</p>
+            <div class="timeline__tags">
+              <span class="tag tag--sm">Thermodynamics</span>
+              <span class="tag tag--sm">CAD/FEA</span>
+              <span class="tag tag--sm">Manufacturing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item scroll-reveal" style="--delay:0.3s">
+          <div class="timeline__marker">
+            <div class="timeline__dot"></div>
+          </div>
+          <div class="timeline__card">
+            <div class="timeline__card-header">
+              <div>
+                <h3 class="timeline__role">Intern</h3>
+                <p class="timeline__org">KR Pulp and Paper Limited · Shahjahanpur, India</p>
+              </div>
+              <span class="timeline__date mono">Jun – Jul 2022</span>
+            </div>
+            <p class="timeline__desc">Hands-on exposure to production planning, quality control, and operational efficiency on a live factory floor. Implemented an organised filing system to improve accuracy and throughput.</p>
+            <div class="timeline__tags">
+              <span class="tag tag--sm">Quality Control</span>
+              <span class="tag tag--sm">Production Planning</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header scroll-reveal">
+        <span class="section__num mono">05</span>
+        <h2 class="section__title">Let's Connect</h2>
+        <div class="section__line"></div>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__left scroll-reveal">
+          <p class="contact__intro">
+            Open to Werkstudent positions, internships, and entry-level engineering roles across Germany. I respond within 24 hours.
+          </p>
+          <a href="mailto:official.tarunpandey6330@gmail.com" class="contact__email">
+            official.tarunpandey6330@gmail.com
+          </a>
+          <div class="contact__social">
+            <a href="#" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="social-btn" aria-label="Xing" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.302-.429-.643-.961-.643H3.648z"/></svg>
+              Xing
+            </a>
+          </div>
+        </div>
+        <div class="contact__right scroll-reveal">
+          <div class="contact__availability">
+            <div class="avail-indicator">
+              <span class="avail-dot"></span>
+              <span>Available for opportunities</span>
+            </div>
+            <div class="avail-details">
+              <div class="avail-row">
+                <span class="mono">Role Type</span>
+                <span>Werkstudent · Internship · Entry-Level</span>
+              </div>
+              <div class="avail-row">
+                <span class="mono">Location</span>
+                <span>Siegen, NRW · Remote · Hybrid</span>
+              </div>
+              <div class="avail-row">
+                <span class="mono">Start Date</span>
+                <span>Immediately</span>
+              </div>
+              <div class="avail-row">
+                <span class="mono">Target Fields</span>
+                <span>Mechatronics · Mechanical Design · Technical Management</span>
+              </div>
+              <div class="avail-row">
+                <span class="mono">Phone</span>
+                <span>+49 15224712252</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── IMPRESSUM ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="nav__logo-bracket">[</span>TP<span class="nav__logo-bracket">]</span>
+          <p>Mechatronics &amp; Mechanical Engineering</p>
+          <p class="mono footer__copy">© 2025 Tarun Pandey</p>
+        </div>
+        <div class="footer__impressum">
+          <h4>Impressum</h4>
+          <p>Angaben gemäß § 5 TMG:</p>
+          <p>Tarun Pandey<br/>
+             [Straße + Hausnummer]<br/>
+             57076 Siegen, Deutschland</p>
+          <p>E-Mail: official.tarunpandey6330@gmail.com<br/>
+             Tel.: +49 15224712252</p>
+          <p class="footer__impressum-note">Diese Website dient ausschließlich der persönlichen Vorstellung und ist eine private, nicht-kommerzielle Seite.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
